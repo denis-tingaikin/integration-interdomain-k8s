@@ -7,4 +7,5 @@ require (
 	github.com/networkservicemesh/integration-tests v0.0.0-20211118161251-e3967e7cda5e
 	github.com/stretchr/testify v1.7.0
 	gopkg.in/yaml.v2 v2.4.0 // indirect
+	k8s.io/client-go v0.20.5
 )
