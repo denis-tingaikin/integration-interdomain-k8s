@@ -13,8 +13,8 @@ curl -o aws-iam-authenticator https://s3.us-west-2.amazonaws.com/amazon-eks/1.21
 eksctl create cluster  \
       --name "${AWS_CLUSTER_NAME}" \
       --version 1.22 \
-      --nodegroup-name "${AWS_CLUSTER_NAME}-workers" \
-      --node-type t3.xlarge \
+      --nodegroup-name "${AWS_CLUSTER_NAME}-worker" \
+      --node-type t2.xlarge \
       --nodes 1
 
 curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.23.6/bin/linux/amd64/kubectl
